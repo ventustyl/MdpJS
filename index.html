@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mdp Js</title>
+  </head>
+  <body>
+    <h2>Copié</h2>
+    <div class="app">
+      <input type="text" id="password" placeholder="Mot de passe" readonly />
+      <div class="range">
+        <input
+          type="range"
+          id="range"
+          min="8"
+          max="24"
+          value="8"
+          step="1"
+          oninput="document.getElementById('rangeValue').value = this.value"
+        />
+        <input type="text" id="rangeValue" value="8" readonly />
+      </div>
+      <div class="option">
+        <input type="checkbox" id="upperCase" />
+        <label for="upperCase">Majuscule</label>
+        <input type="checkbox" id="lowerCase" />
+        <label for="lowerCase">Minuscule</label>
+        <input type="checkbox" id="numbers" />
+        <label for="numbers">Chiffre</label>
+        <input type="checkbox" id="symbols" />
+        <label for="symbols">Symbole</label>
+      </div>
+      <button id="generate">Générer</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
